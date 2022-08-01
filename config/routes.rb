@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root to: "lists#index"
-  get "lists", to: "lists#index"
+  root to: 'lists#index'
+  resources :lists, only: %i[index show new create]
 end
