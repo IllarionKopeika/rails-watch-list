@@ -1,7 +1,7 @@
 <div class="container">
   <div class="justify-content-center row">
     <div class="col-sm-8 col-sm-offset-2">
-      <h1>New bookmark</h1>
+      <h1>Add movie</h1>
         <%= simple_form_for [@list, @bookmark] do |f| %>
         <div>
           <%= f.association :movie %>
@@ -10,7 +10,7 @@
           <%= f.input :comment, placeholder: "Leave a brief comment" %>
         </div>
         <div>
-          <%= f.button :submit, class: "btn btn-outline-secondary"%>
+          <%= f.button :submit, 'Add Movie', class: "btn btn-outline-secondary"%>
           <%= link_to "Back", list_path(@list), class: "btn btn-outline-secondary" %>
         </div>
         <% end %>
